@@ -33,14 +33,12 @@
 
 
         let sunnyBtn = document.getElementById("sun").addEventListener("click", () => {
-            canvas.classList.remove()
+            canvas.classList.remove("rain-bg")
+            canvas.classList.remove("snow-bg")
             canvas.classList.add("sun-bg")
         })
 
-        let sunnyTree = new Image();
-        sunnyTree.src = 'assets/tree_sunny.png';
-        let ground = new Image();
-        ground.src = 'assets/ground_sunny.png';
+
         let sun = new Image();
         sun.src = 'assets/sun.png';
 
@@ -55,6 +53,7 @@
         };
 
     </script>
+    <script type="module" src="cloud.js"></script>
     <script type="module" src="snow.js"></script>
     <script type="module" src="rain.js"></script>
     <script type="module" src="script.js"></script>
